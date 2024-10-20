@@ -9,28 +9,33 @@ function calculateCompass() {
   // Loop over all the questions and get the selected answer values
   for (let i = 1; i <= 8; i++) {
     const answer = document.querySelector(`input[name="q${i}"]:checked`);
-    const value = parseInt(answer.value);
+    if (answer) {
+      const value = parseInt(answer.value);
 
-    if (engagementQuestions.includes(i)) {
-      if (i === 8) {
-        // Special handling for question 8
-        if (value === 1) { xScore += 1; } // Jim Simons (Engagement)
-        if (value === 3) { xScore += 1; yScore += 1; } // George Soros (Both)
-      } else {
-        xScore += value;
+      if (engagementQuestions.includes(i)) {
+        if (i === 8) {
+          // Special handling for question 8
+          if (value === 1) { xScore += 1; } // Jim Simons (Engagement)
+          if (value === 3) { xScore += 1; yScore += 1; } // George Soros (Both)
+        } else {
+          xScore += value;
+        }
       }
-    }
 
-    if (beliefQuestions.includes(i)) {
-      if (i === 8) {
-        // Special handling for question 8
-        if (value === 2) { yScore += 1; } // Roaring Kitty (Belief)
-        if (value === 3) { xScore += 1; yScore += 1; } // George Soros (Both)
-      } else {
-        yScore += value;
+      if (beliefQuestions.includes(i)) {
+        if (i === 8) {
+          // Special handling for question 8
+          if (value === 2) { yScore += 1; } // Roaring Kitty (Belief)
+          if (value === 3) { xScore += 1; yScore += 1; } // George Soros (Both)
+        } else {
+          yScore += value;
+        }
       }
     }
   }
+
+  // Hide form on submit
+  document.getElementById("futarchy-test").style.display = "none";
 
   // Display the result based on the final x and y scores
   showResult(xScore, yScore);
