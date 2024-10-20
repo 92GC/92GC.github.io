@@ -68,7 +68,7 @@ function showResult(x, y) {
   // Show the result text
   let resultText = "";
   if (x >= 6 && y >= 6) {
-    resultText = "You are a Proph3t. You make the world a little more +EV everyday!";
+    resultText = "You are a Futard. You make the world a little more +EV everyday!";
   } else if (x >= 6) {
     resultText = "You are a Votecel. May you live in interesting times!";
   } else if (y >= 6) {
