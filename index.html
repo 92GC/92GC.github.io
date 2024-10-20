@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>How Futarded Am I? Test</title>
+  <link rel="icon" type="image/png" href="logo.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -53,6 +54,42 @@
       <label><input type="radio" name="q4" value="3"> Absolutely</label>
     </div>
 
+    <!-- Question 5: Engagement -->
+    <div class="question">
+      <p>5. Have you ever shilled futarchy IRL?</p>
+      <label><input type="radio" name="q5" value="0" required> Never</label><br>
+      <label><input type="radio" name="q5" value="1"> A couple of times</label><br>
+      <label><input type="radio" name="q5" value="2"> Frequently</label><br>
+      <label><input type="radio" name="q5" value="3"> All the time</label>
+    </div>
+
+    <!-- Question 6: Belief -->
+    <div class="question">
+      <p>6. How often do you check prediction markets?</p>
+      <label><input type="radio" name="q6" value="0" required> Never</label><br>
+      <label><input type="radio" name="q6" value="1"> Occasionally</label><br>
+      <label><input type="radio" name="q6" value="2"> Regularly</label><br>
+      <label><input type="radio" name="q6" value="3"> Constantly</label>
+    </div>
+
+    <!-- Question 7: Belief -->
+    <div class="question">
+      <p>7. How likely is it that futarchy will become the dominant form of governance?</p>
+      <label><input type="radio" name="q7" value="0" required> Not at all likely</label><br>
+      <label><input type="radio" name="q7" value="1"> Slightly possible</label><br>
+      <label><input type="radio" name="q7" value="2"> Likely</label><br>
+      <label><input type="radio" name="q7" value="3"> Inevitable</label>
+    </div>
+
+    <!-- Question 8: Engagement & Belief -->
+    <div class="question">
+      <p>8. Do you aspire to be Warren Buffet, Jim Simons, Roaring Kitty, or George Soros?</p>
+      <label><input type="radio" name="q8" value="0" required> Warren Buffet</label><br>
+      <label><input type="radio" name="q8" value="1"> Jim Simons</label><br>
+      <label><input type="radio" name="q8" value="2"> Roaring Kitty</label><br>
+      <label><input type="radio" name="q8" value="3"> George Soros</label>
+    </div>
+
     <!-- Submit Button -->
     <button type="button" onclick="calculateCompass()">Submit</button>
 
@@ -61,11 +98,6 @@
   <div id="result-container">
     <p id="result"></p>
     <img id="result-image" alt="Result Image">
-  </div>
-
-  <!-- Compass Canvas -->
-  <div id="compass-container">
-    <canvas id="compassCanvas" width="400" height="400"></canvas>
   </div>
 
   <script src="compass.js"></script>
