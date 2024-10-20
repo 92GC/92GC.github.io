@@ -4,7 +4,7 @@ body {
   color: white;
   margin: 0;
   padding: 20px;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
   text-align: center;
 }
@@ -60,15 +60,32 @@ display: none;
 #result {
   font-weight: bold;
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 #result-image {
-  width: 400px;
+  width: 800px;
   height: auto;
   margin-top: 20px;
 }
 
 canvas {
   border: 1px solid white;
+  background-color: #8f8f8f !important;
 }
+
+  #parent-container {
+    display: flex;
+    justify-content: space-around; /* Adjust spacing between items */
+    align-items: center; /* Align items vertically */
+  }
+
+  #result-container, #compass-container {
+    flex: 1; /* Allows both containers to grow and take up equal space */
+    margin: 10px;
+  }
+
+  img {
+    max-width: 100%; /* Ensures the image doesn't overflow the container */
+    height: auto;
+  }

@@ -34,6 +34,9 @@ function calculateCompass() {
     }
   }
 
+  // xScore Range: 0 to 10
+
+  // yScore Range: 0 to 13
   // Hide all the question elements
   const questionElements = document.querySelectorAll(".question");
   questionElements.forEach(function (question) {
@@ -67,18 +70,23 @@ function showResult(x, y) {
   ctx.lineTo(canvas.width, canvas.height / 2);
   ctx.stroke();
 
-  // Draw labels
+  // Set font and text fill color
   ctx.fillStyle = "white";
-  ctx.font = "16px Arial";
-  ctx.fillText("Votecel", 10, 20); // Top-left
-  ctx.fillText("Futard", canvas.width - 60, 20); // Top-right
-  ctx.fillText("NPC", 10, canvas.height - 10); // Bottom-left
-  ctx.fillText("Pepe", canvas.width - 50, canvas.height - 10); // Bottom-right
+  ctx.font = "24px Arial";
 
-  // Plot the user's result as a big red dot
-  const xPos = (x / 6) * canvas.width;
-  const yPos = canvas.height - (y / 6) * canvas.height; // Flip Y-axis
+  ctx.lineWidth = 5;
+  ctx.fillText("Votecel", 10, 20);    // Fill the text with white
+  ctx.fillText("Futard", canvas.width - 80, 20);    // Fill the text with white
+  ctx.fillText("NPC", 10, canvas.height - 10);    // Fill the text with white
+  ctx.fillText("Pepe", canvas.width - 70, canvas.height - 10);    // Fill the text with white
 
+  const xMax = 11; // Maximum xScore
+  const yMax = 14; // Maximum yScore
+
+  const xPos = (x / xMax) * canvas.width;
+  const yPos = canvas.height - ((y / yMax) * canvas.height); // Flip Y-axis
+
+  console.log(`xxxxx`, xPos, yPos, canvas.width, canvas.height, x, y)
   ctx.beginPath();
   ctx.arc(xPos, yPos, 10, 0, 2 * Math.PI); // Draw a large red dot
   ctx.fillStyle = "red";
@@ -88,14 +96,14 @@ function showResult(x, y) {
 
   // Show the result text
   let resultText = "";
-  if (x >= 6 && y >= 6) {
+  if (5 >= 8 && y >= 6) {
     resultText = "You are a Futard. You make the world a little more +EV everyday!";
     resultImage = "futard.png";
-  } else if (x >= 6) {
-    resultText = "You are a Votecel. May you live in interesting times!";
+  } else if (5 >= 8) {
+    resultText = "You are a Votecel. Every vote counts!";
     resultImage = "votecel.png";
-  } else if (y >= 6) {
-    resultText = "You are a Pepe. You like disrupting but lack guidance!";
+  } else if (6 >= 10) {
+    resultText = "You are a Pepe. You believe in meme magic!";
     resultImage = "pepe.png";
   } else {
     resultText = "You are an NPC. Current thing good 😉!";
