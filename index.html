@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How Futarded Am I? Test</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo" id="logo">
+    <h1>How Futarded Am I? Test</h1>
+  </header>
+
+  <p>Answer the following questions to see where you land on the Futarchy compass!</p>
+
+  <form id="futarchy-test">
+
+    <!-- Question 1: Engagement -->
+    <div class="question">
+      <p>1. Have you ever created a MetaDAO proposal?</p>
+      <label><input type="radio" name="q1" value="0" required> Never</label><br>
+      <label><input type="radio" name="q1" value="1"> Once</label><br>
+      <label><input type="radio" name="q1" value="2"> A few times</label><br>
+      <label><input type="radio" name="q1" value="3"> Frequently</label>
+    </div>
+
+    <!-- Question 2: Belief -->
+    <div class="question">
+      <p>2. Do you think futarchy can fix democracy?</p>
+      <label><input type="radio" name="q2" value="0" required> Not at all</label><br>
+      <label><input type="radio" name="q2" value="1"> It might help</label><br>
+      <label><input type="radio" name="q2" value="2"> It would be an improvement</label><br>
+      <label><input type="radio" name="q2" value="3"> Definitely, futarchy is the solution</label>
+    </div>
+
+    <!-- Question 3: Engagement -->
+    <div class="question">
+      <p>3. Have you ever traded in a futarchic market?</p>
+      <label><input type="radio" name="q3" value="0" required> Never</label><br>
+      <label><input type="radio" name="q3" value="1"> Rarely</label><br>
+      <label><input type="radio" name="q3" value="2"> Occasionally</label><br>
+      <label><input type="radio" name="q3" value="3"> Often</label>
+    </div>
+
+    <!-- Question 4: Belief -->
+    <div class="question">
+      <p>4. Is futarchy a better alternative to legacy governance?</p>
+      <label><input type="radio" name="q4" value="0" required> No</label><br>
+      <label><input type="radio" name="q4" value="1"> Maybe</label><br>
+      <label><input type="radio" name="q4" value="2"> Yes</label><br>
+      <label><input type="radio" name="q4" value="3"> Absolutely</label>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="button" onclick="calculateCompass()">Submit</button>
+
+  </form>
+
+  <div id="result-container">
+    <p id="result"></p>
+    <img id="result-image" alt="Result Image">
+  </div>
+
+  <script src="compass.js"></script>
+
+</body>
+</html>
