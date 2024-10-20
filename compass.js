@@ -39,7 +39,8 @@ function calculateCompass() {
   questionElements.forEach(function (question) {
     question.style.display = "none";
   });
-
+  document.getElementById('result-container').style.display = 'block';
+  document.getElementById('compass-container').style.display = 'block';
   // Display the result based on the final x and y scores
   showResult(xScore, yScore);
 }
@@ -89,14 +90,19 @@ function showResult(x, y) {
   let resultText = "";
   if (x >= 6 && y >= 6) {
     resultText = "You are a Futard. You make the world a little more +EV everyday!";
+    resultImage = "futard.png";
   } else if (x >= 6) {
     resultText = "You are a Votecel. May you live in interesting times!";
+    resultImage = "votecel.png";
   } else if (y >= 6) {
     resultText = "You are a Pepe. You like disrupting but lack guidance!";
+    resultImage = "pepe.png";
   } else {
     resultText = "You are an NPC. Current thing good 😉!";
+    resultImage = "npc.png";
   }
 
+  document.getElementById("result-image").src = resultImage; // Set the image source
   document.getElementById("result").innerText = resultText;
   document.getElementById("result-container").style.display = "block";
 }

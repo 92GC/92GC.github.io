@@ -53,6 +53,10 @@ button:hover {
   display: none;
 }
 
+#compass-container {
+display: none;
+}
+
 #result {
   font-weight: bold;
   margin-top: 20px;
