@@ -49,7 +49,7 @@ button:hover {
 }
 
 #result-container {
-  margin-top: 400px;
+  margin-top: 20px;
   display: none;  /* Hidden by default, will be shown when results are calculated */
 }
 
