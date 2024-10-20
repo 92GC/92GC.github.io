@@ -65,10 +65,6 @@ button:hover {
   margin-top: 20px;
 }
 
-#compass-container {
-  margin-top: 40px;
-}
-
 canvas {
   border: 1px solid white;
 }
