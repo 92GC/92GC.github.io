@@ -28,16 +28,16 @@ function showResult(x, y) {
 
   // Determine result and corresponding image
   if (x >= 6 && y >= 6) {
-    resultText = "You are a Proph3t. You make the world a little more +EV everyday!";
-    resultImage = "futard.png";
+    resultText = "You are a Proph3t (High Futarchy & High Participation)!";
+    resultImage = "proph3t.png";
   } else if (x >= 6 && y <= 5) {
-    resultText = "You are a Votecel. May you live in interesting times!";
+    resultText = "You are a Votecel (High Participation, Low Futarchy)!";
     resultImage = "votecel.png";
   } else if (x <= 5 && y >= 6) {
-    resultText = "You are a Pepe. You like disrupting but lack guidance!";
+    resultText = "You are Pepe (Low Participation, High Futarchy)!";
     resultImage = "pepe.png";
   } else {
-    resultText = "You are an NPC. Current thing good 😉!";
+    resultText = "You are an NPC (Low Participation & Low Futarchy)!";
     resultImage = "npc.png";
   }
 
