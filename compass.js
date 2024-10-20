@@ -97,7 +97,7 @@ function showResult(x, y) {
   // Show the result text
   let resultText = "";
   if (x >= 5.5 && y >= 7) {
-    resultText = "You are a Futard. You make the world a little more +EV everyday!";
+    resultText = "You are a true Futard. You make the world a little more +EV everyday!";
     resultImage = "futard.png";
   } else if (x >= 5.5) {
     resultText = "You are a Votecel. Every vote counts!";
