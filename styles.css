@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #1f1f1f;  /* Dark background color */
-  color: white;               /* Default text color */
+  background-color: #1f1f1f;
+  color: white;
   margin: 0;
   padding: 20px;
   max-width: 600px;
@@ -29,7 +29,7 @@ header {
 
 h1 {
   font-size: 24px;
-  color: #FC494A;  /* Updated header text color */
+  color: #FC494A;
 }
 
 .question {
@@ -45,12 +45,12 @@ button {
 }
 
 button:hover {
-  background-color: #E5494A;  /* Slightly darker hover effect */
+  background-color: #E5494A;
 }
 
 #result-container {
   margin-top: 20px;
-  display: none;  /* Hidden by default, will be shown when results are calculated */
+  display: none;
 }
 
 #result {
@@ -66,10 +66,9 @@ button:hover {
 }
 
 #compass-container {
-  margin-top: 400px;
+  margin-top: 40px;
 }
 
 canvas {
-  margin-top: 400px;
   border: 1px solid white;
 }
