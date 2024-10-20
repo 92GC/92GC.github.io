@@ -75,10 +75,10 @@ function showResult(x, y) {
   ctx.font = "24px Arial";
 
   ctx.lineWidth = 5;
-  ctx.fillText("Votecel", 10, 20);    // Fill the text with white
+  ctx.fillText("Pepe", 10, 20);    // Fill the text with white
   ctx.fillText("Futard", canvas.width - 80, 20);    // Fill the text with white
   ctx.fillText("NPC", 10, canvas.height - 10);    // Fill the text with white
-  ctx.fillText("Pepe", canvas.width - 70, canvas.height - 10);    // Fill the text with white
+  ctx.fillText("Votecel", canvas.width - 85, canvas.height - 10);    // Fill the text with white
 
   const xMax = 11; // Maximum xScore
   const yMax = 14; // Maximum yScore
@@ -96,13 +96,13 @@ function showResult(x, y) {
 
   // Show the result text
   let resultText = "";
-  if (5 >= 8 && y >= 6) {
+  if (x >= 5.5 && y >= 7) {
     resultText = "You are a Futard. You make the world a little more +EV everyday!";
     resultImage = "futard.png";
-  } else if (5 >= 8) {
+  } else if (x >= 5.5) {
     resultText = "You are a Votecel. Every vote counts!";
     resultImage = "votecel.png";
-  } else if (6 >= 10) {
+  } else if (y >= 7) {
     resultText = "You are a Pepe. You believe in meme magic!";
     resultImage = "pepe.png";
   } else {
