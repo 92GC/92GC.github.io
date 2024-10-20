@@ -18,7 +18,7 @@
     <h1>The Futarded Compass</h1>
   </header>
 
-  <p>Answer the following questions to see where you land on the futarded compass!</p>
+  <p id="introText">Answer the following questions to see where you land on the futarded compass!</p>
 
   <form id="futarchy-test">
 
@@ -27,8 +27,8 @@
       <p style="font-size: 24px; color: #c2c2c2;">1. Have you ever created a MetaDAO proposal?</p>
       <label><input type="radio" name="q1" value="0" required> Never</label><br>
       <label><input type="radio" name="q1" value="1"> Once</label><br>
-      <label><input type="radio" name="q1" value="2"> A few times</label><br>
-      <label><input type="radio" name="q1" value="3"> Two plus times</label>
+      <label><input type="radio" name="q1" value="2"> Twice</label><br>
+      <label><input type="radio" name="q1" value="3"> Three plus times</label>
     </div>
 
     <!-- Question 2: Belief -->
@@ -95,7 +95,7 @@
     </div>
 
     <!-- Submit Button -->
-    <button type="button" onclick="calculateCompass()">Submit</button>
+    <button type="button" id="submitButton" onclick="calculateCompass()">Submit</button>
 
  </form>
 

@@ -42,6 +42,8 @@ function calculateCompass() {
   questionElements.forEach(function (question) {
     question.style.display = "none";
   });
+  document.getElementById('submitButton').style.display = 'none';
+  document.getElementById('introText').style.display = 'none';
   document.getElementById('result-container').style.display = 'block';
   document.getElementById('compass-container').style.display = 'block';
   // Display the result based on the final x and y scores
