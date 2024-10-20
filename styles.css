@@ -89,3 +89,34 @@ canvas {
     max-width: 100%; /* Ensures the image doesn't overflow the container */
     height: auto;
   }
+#footer-link {
+    color: inherit; /* Inherit the current text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.5em; /* Increase text size */
+    display: inline-flex; /* Align text and image inline */
+    align-items: center; /* Vertically align the image */
+}
+
+#footer-link:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+}
+
+#book-icon {
+    width: 24px; /* Adjust size of the SVG icon */
+    height: 24px;
+    margin-left: 8px; /* Add space between text and icon */
+}
+
+footer {
+    margin-top: 50px; /* Add margin of 10 pixels above the footer area */
+}
+
+#main-title {
+    font-size: 2.5em; /* Matches the size of the bottom link text */
+    font-weight: bold; /* Optional: make the title bold */
+}
+
+/* Style the introductory text with font size 24px */
+#introText {
+    font-size: 24px;
+}
