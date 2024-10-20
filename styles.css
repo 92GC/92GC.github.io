@@ -37,8 +37,8 @@ h1 {
 }
 
 button {
-  background-color: white;
-  color: #FC494A;
+  background-color: #FC494A;
+  color: white;
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -46,11 +46,11 @@ button {
 }
 
 button:hover {
-  background-color: #e04344;  /* Slightly darker hover effect */
+  background-color: #E5494A;  /* Slightly darker hover effect */
 }
 
 #result-container {
-  margin-top: 30px;
+  margin-top: 400px;
   display: none;  /* Hidden by default, will be shown when results are calculated */
 }
 
@@ -67,10 +67,10 @@ button:hover {
 }
 
 #compass-container {
-  margin-top: 30px;
+  margin-top: 400px;
 }
 
 canvas {
-  margin-top: 20px;
+  margin-top: 400px;
   border: 1px solid white;
 }
