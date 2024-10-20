@@ -65,3 +65,12 @@ button:hover {
   height: auto;
   margin-top: 20px;
 }
+
+#compass-container {
+  margin-top: 30px;
+}
+
+canvas {
+  margin-top: 20px;
+  border: 1px solid white;
+}
